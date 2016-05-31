@@ -48,16 +48,16 @@ function sumar(){
 			matR[j][i] = mat1[i][j] + mat2[i][j];	
 		};
 	};
-	resultadoSumar0.textContent = (matR[0][0]);
-	resultadoSumar1.textContent = (matR[1][0]);
+	resultadoSumar0.textContent = (matR[0][0] + ",");
+	resultadoSumar1.textContent = (matR[1][0] + ",");
 	resultadoSumar2.textContent = (matR[2][0]);
 
-	resultadoSumar3.textContent = (matR[0][1]);
-	resultadoSumar4.textContent = (matR[1][1]);
+	resultadoSumar3.textContent = (matR[0][1] + ",");
+	resultadoSumar4.textContent = (matR[1][1] + ",");
 	resultadoSumar5.textContent = (matR[2][1]);
 
-	resultadoSumar6.textContent = (matR[0][2]);
-	resultadoSumar7.textContent = (matR[1][2]);
+	resultadoSumar6.textContent = (matR[0][2] + ",");
+	resultadoSumar7.textContent = (matR[1][2] + ",");
 	resultadoSumar8.textContent = (matR[2][2]);
 }
 function restar(){
@@ -93,16 +93,16 @@ function restar(){
 			matResR[j][i] = matRes1[i][j] - matRes2[i][j];	
 		};
 	};
-	resultadoRestar0.textContent = (matResR[0][0]);
-	resultadoRestar1.textContent = (matResR[1][0]);
+	resultadoRestar0.textContent = (matResR[0][0] + ",");
+	resultadoRestar1.textContent = (matResR[1][0] + ",");
 	resultadoRestar2.textContent = (matResR[2][0]);
 
-	resultadoRestar3.textContent = (matResR[0][1]);
-	resultadoRestar4.textContent = (matResR[1][1]);
+	resultadoRestar3.textContent = (matResR[0][1] + ",");
+	resultadoRestar4.textContent = (matResR[1][1] + ",");
 	resultadoRestar5.textContent = (matResR[2][1]);
 
-	resultadoRestar6.textContent = (matResR[0][2]);
-	resultadoRestar7.textContent = (matResR[1][2]);
+	resultadoRestar6.textContent = (matResR[0][2] + ",");
+	resultadoRestar7.textContent = (matResR[1][2] + ",");
 	resultadoRestar8.textContent = (matResR[2][2]);		
 }
 function transpuesta(){
@@ -126,16 +126,16 @@ function transpuesta(){
 			matResT[j][i] = matTrans[i][j];
 		}
 	}
-	resultadoTrans1.textContent = (matResT[0][0]);
-	resultadoTrans2.textContent = (matResT[0][1]);
+	resultadoTrans1.textContent = (matResT[0][0] + ",");
+	resultadoTrans2.textContent = (matResT[0][1] + ",");
 	resultadoTrans3.textContent = (matResT[0][2]);
 
-	resultadoTrans4.textContent = (matResT[1][0]);
-	resultadoTrans5.textContent = (matResT[1][1]);
+	resultadoTrans4.textContent = (matResT[1][0] + ",");
+	resultadoTrans5.textContent = (matResT[1][1] + ",");
 	resultadoTrans6.textContent = (matResT[1][2]);
 
-	resultadoTrans7.textContent = (matResT[2][0]);
-	resultadoTrans8.textContent = (matResT[2][1]);
+	resultadoTrans7.textContent = (matResT[2][0] + ",");
+	resultadoTrans8.textContent = (matResT[2][1] + ",");
 	resultadoTrans9.textContent = (matResT[2][2]);
 }
 function determinar(){
