@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize/css/materialize.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="calculadora_op.js"></script>
+	<style>
+	.indicator{
+		background-color: #2979FF !important;
+	}
+	input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+		border-bottom: 1px solid #448AFF;
+	}
+	</style>
+    <title>Calculadora Matricial</title>
+    <nav class="blue darken-2">
+    	<a href="/" class="brand-logo">Operaciones con Matrices</a>
+    	<ul id="slide-out" class="side-nav">
+    		<li><a href="#!">Acerca de</a></li>
+    		<li><a href="#!">Contactanos</a></li>
+    	</ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">reorder</i></a>
+</nav>
+    </head>
+    <body>
+  
+	<div class="row">
+    <div class="col s12">
+    	<ul class="tabs">
+        	<li class="tab col s2"><a class="active" href="#test1" style="color: #448AFF">Suma</a></li>
+        	<li class="tab col s2"><a href="#test2" style="color: #448AFF">Resta</a></li>
+        	<li class="tab col s2"><a href="#test3" style="color: #448AFF">Traspuesta</a></li>
+        	<li class="tab col s2"><a href="#test4" style="color: #448AFF">Determinante</a></li>
+        	<li class="tab col s2"><a href="#test5" style="color: #448AFF">Rango</a></li>
+        	<li class="tab col s2"><a href="#test6" style="color: #448AFF">Ecuaciones</a></li>
+        </ul>
+    </div>
+    <!---------------------------------------Sumar---------------------------------------------->
+    <div id="test1" class="col s12">
+    	<br>
+    	<div class="card-panel col s5">		
+    		<input placeholder="0" id="a" type="number" class="col s4"><input placeholder="0" id="b" type="number" class="col s4"><input placeholder="0"  id="c" type="number" class="col s4">
+
+    		<input placeholder="0" id="d" type="number" class="col s4"><input placeholder="0" id="e" type="number" class="col s4"><input placeholder="0" id="f" type="number" class="col s4">
+    		<input placeholder="0"  id="g" type="number" class="col s4"><input placeholder="0" id="h" type="number" class="col s4"><input placeholder="0" id="i" type="number" class="col s4">
+		</div>
+		<h2 class="col s1 center-align">+</h2>
+		<div class="card-panel col s5">		
+    		<input id="x1" type="number" placeholder="0" class="col s4"><input placeholder="0"  id="x2" type="number" class="col s4"><input placeholder="0" id="x3" type="number" class="col s4">
+    		<input placeholder="0" id="y1" type="number" class="col s4"><input placeholder="0" id="y2" type="number" class="col s4"><input placeholder="0" id="y3" type="number" class="col s4">
+    		<input placeholder="0" id="z1" type="number" class="col s4"><input placeholder="0" id="z2" type="number" class="col s4"><input placeholder="0"  id="z3" type="number" class="col s4">
+		</div>
+		<div class="col s11 center-align">
+			<button id="bSumar" class="btn waves-effect waves-light blue darken-2">Sumar</button>
+		</div>
+		
+		<div class="col s5 offset-s3 center-align card-panel">
+		    
+	            <h4><div id="resultadoSumar0" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoSumar1" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoSumar2" class="col s4" style="color: #448AFF"></div>
+	           
+	           	<div id="resultadoSumar3" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoSumar4" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoSumar5" class="col s4" style="color: #448AFF"></div>
+	           
+	           	<div id="resultadoSumar6" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoSumar7" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoSumar8" class="col s4" style="color: #448AFF"></div></h4>
+	            
+        </div>
+    </div>
+    <!--------------------------------------Restar---------------------------------------------->
+    <div id="test2" class="col s12">
+    <br>
+    	<div class="card-panel col s5">
+    		<input placeholder="0" id="res1" type="number" class="col s4"><input placeholder="0" id="res2" type="number" class="col s4"><input placeholder="0" id="res3" type="number" class="col s4">
+    		<input placeholder="0" id="res4" type="number" class="col s4"><input placeholder="0" id="res5" type="number" class="col s4"><input placeholder="0" id="res6" type="number" class="col s4">
+    		<input placeholder="0" id="res7" type="number" class="col s4"><input placeholder="0" id="res8" type="number" class="col s4"><input placeholder="0"  id="res9" type="number" class="col s4">
+    	</div>
+    	<h2 class="col s1 center-align">-</h2>
+    	<div class="card-panel col s5">
+    		<input placeholder="0" id="resA" type="number" class="col s4"><input placeholder="0" id="resB" type="number" class="col s4"><input placeholder="0" id="resC" type="number" class="col s4">
+    		<input placeholder="0" id="resD" type="number" class="col s4"><input placeholder="0" id="resE" type="number" class="col s4"><input placeholder="0" id="resF" type="number" class="col s4">
+    		<input placeholder="0" id="resG" type="number" class="col s4"><input placeholder="0" id="resH" type="number" class="col s4"><input placeholder="0"  id="resI" type="number" class="col s4">
+    	</div>
+    	<div class="col s11 center-align">
+			<button id="bRestar" class="btn waves-effect waves-light blue darken-2">Restar</button>
+    	</div>
+    	<div class="col s5 offset-s3 center-align card-panel">
+			<h4><div id="resultadoRestar0" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoRestar1" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoRestar2" class="col s4" style="color: #448AFF"></div>
+	           
+	           	<div id="resultadoRestar3" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoRestar4" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoRestar5" class="col s4" style="color: #448AFF"></div>
+	           
+	           	<div id="resultadoRestar6" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoRestar7" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoRestar8" class="col s4" style="color: #448AFF"></div></h4>
+	            
+    		
+    	</div>
+    </div>
+	<!--------------------------------------------Traspuesta------------------------------>
+    <div id="test3" class="col s12">
+    	<div class="card-panel col s5 offset-s3">
+    		<input placeholder="0" type="number" id="aa" class="col s4"><input placeholder="0" type="number" id="ab" class="col s4"><input placeholder="0" type="number" id="ac" class="col s4">
+    		<input placeholder="0" type="number" id="ba" class="col s4"><input placeholder="0" type="number" id="bb" class="col s4"><input placeholder="0" type="number" id="bc" class="col s4">
+    		<input placeholder="0" type="number" id="ca" class="col s4"><input placeholder="0" type="number" id="cb" class="col s4"><input placeholder="0" type="number" id="cc" class="col s4">
+		</div>
+		<div class="col s11 center-align">
+			<button id="bTrans" class="btn waves-effect waves-light blue darken-2">Calcular</button>
+		</div>
+		<div class="col s5 offset-s3 center-align card-panel">
+			<h4><div id="resultadoTrans1" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoTrans2" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoTrans3" class="col s4" style="color: #448AFF"></div>
+	           
+	           	<div id="resultadoTrans4" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoTrans5" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoTrans6" class="col s4" style="color: #448AFF"></div>
+	           
+	           	<div id="resultadoTrans7" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoTrans8" class="col s4" style="color: #448AFF"></div>
+	           	<div id="resultadoTrans9" class="col s4" style="color: #448AFF"></div></h4>
+	            
+    		
+    	</div>
+    </div>
+    <!--------------------------------------------Determinante---------------------------->
+    <div id="test4" class="col s12">
+    	<div class="card-panel col s5 offset-s3">
+    		<input placeholder="0" type="number" id="det1" class="col s4"><input placeholder="0" type="number" id="det2" class="col s4"><input placeholder="0"  type="number" id="det3" class="col s4">
+    		<input placeholder="0" type="number" id="det4" class="col s4"><input placeholder="0" type="number" id="det5" class="col s4"><input placeholder="0"  type="number" id="det6" class="col s4">
+    		<input placeholder="0" type="number" id="det7" class="col s4"><input placeholder="0" type="number" id="det8" class="col s4"><input placeholder="0" type="number" id="det9" class="col s4">
+    	</div>
+    	<div class="col s11 center-align">
+    		<button id="bDet" class="btn waves-effect waves-light blue darken-2">Calcular</button>
+    	</div>
+    	<div class="card-panel offset-s3 col s5 center-align">
+    		<div id="resultadoDet" style="color: #448AFF"></div>
+    	</div>
+    </div>
+    <!--------------------------------------------Rango-------------------------------------->
+    <div id="test5" class="col 12">
+    	<div class="card-panel col s5 offset-s3">
+    		<input placeholder="0" type="number" id="ran1" class="col s4"><input placeholder="0" type="number" id="ran2" class="col s4"><input placeholder="0" type="number" id="ran3" class="col s4">
+    		<input placeholder="0" type="number" id="ran4" class="col s4"><input placeholder="0" type="number" id="ran5" class="col s4"><input placeholder="0" type="number" id="ran6" class="col s4">
+    		<input placeholder="0" type="number" id="ran7" class="col s4"><input placeholder="0" type="number" id="ran8" class="col s4"><input placeholder="0" type="number" id="ran9" class="col s4">
+    	</div>
+    	<div class="col s11 center align">
+    		<button id="bRango" class="btn waves-effect waves-light blue darken-2">Calcular</button>
+    	</div>
+    	<div class="card-panel col s5 offset-s3 center-align">
+    		<h5><div id="resultadoRango" style="color: #448AFF"></div></h5>
+    	</div>
+    </div>
+    <!---------------------------------------------Ecuaciones-------------------------------->
+    <div id="test6" class="col 12">
+		<br>
+			<input placeholder="0" type="number" id="ex1" class="col s2" ><h5 class="col s1">x + </h5><input placeholder="0" type="number" class="col s2" id="ey1"><h5 class="col s1">y + </h5><input placeholder="0" type="number" class="col s2" id="ez1"><h5 class="col s1">z = </h5><input placeholder="0" type="number" class="col s2" id="er1">
+
+			<input placeholder="0" type="number" class="col s2" id="ex2"><h5 class="col s1">x + </h5><input placeholder="0" type="number" class="col s2" id="ey2"><h5 class="col s1">y + </h5><input placeholder="0" type="number" class="col s2" id="ez2"><h5 class="col s1">z = </h5><input placeholder="0" type="number" class="col s2" id="er2">
+
+			<input placeholder="0" type="number" class="col s2" id="ex3"><h5 class="col s1">x + </h5><input placeholder="0" type="number" class="col s2" id="ey3"><h5 class="col s1">y + </h5><input placeholder="0" type="number" class="col s2" id="ez3"><h5 class="col s1">z = </h5><input placeholder="0" type="number" class="col s2" id="er3">
+
+		<div class="col s11 center align">
+    		<button id="bEc" class="btn waves-effect waves-light blue darken-2">Calcular</button>
+    	</div>
+		<div class="card-panel col s11 center-align">
+			<div id="prueba" style="color: #448AFF"></div>
+			<div id="resultado_ec" style="color: #448AFF"></div>
+		</div>
+    </div>
+  </div>
+    
+    <!--Import jQuery before materialize.js-->
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <script>$(document).ready(function(){
+   			$('ul.tabs').tabs();
+ 	});</script>
+    <script>$(".button-collapse").sideNav();</script>
+  
+    
+	<script type="text/javascript">
+		inicio();
+	</script>
+ </body>
+<footer>
+ </footer>
+</html>
